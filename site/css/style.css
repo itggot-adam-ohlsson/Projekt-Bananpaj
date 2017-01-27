@@ -1,13 +1,14 @@
 body {
   margin: 0;
   background-color: #f5f5f5;
+  display: flex;
 }
 
 #container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 
 header {
@@ -29,14 +30,14 @@ nav {
   display: flex;
   width: 50vw;
   background-color: #CCBB00;
-  height: 5vh;
+  height: 10vh;
   justify-content: center;
   align-items: center;
 }
 
 nav a {
   display: flex;
-  height: 5vh;
+  height: 10vh;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
@@ -56,6 +57,58 @@ nav a, nav a:link, nav a:visited {
 nav div p {
   color: #212121;
   font-family: sans-serif;
+  font-size: 3vh;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+
+#mainContent {
+  padding-right: 5vw;
+}
+
+#aside {
+  width: 70vw;
+}
+
+#aside p {
+  font-family: sans-serif;
+}
+
+section p {
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: #FFE900;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer h1 {
+  font-family: sans-serif;
+  color: white;
+  margin-left: 3vw;
+}
+
+#images {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60vh;
+  width: 100vw;
+}
+
+img {
+  max-width: 25vw;
+  max-height: 30vh;
 }
 
 @media screen and (max-width: 800pt) {
@@ -64,6 +117,28 @@ nav div p {
     flex-direction: column;
     width: 100vw;
     align-items: center;
+    height: 15vh
+  }
+
+  nav a {
+    height: 15vh;
+    width: 100vw;
+  }
+
+  #aside {
+    display: none;
+  }
+
+  #main {
+    padding-bottom: 15vh;
+  }
+
+  #mainContent {
+    padding-right: 0;
+  }
+
+  #images {
+    flex-direction: column;
   }
 
 }
