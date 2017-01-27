@@ -28,7 +28,7 @@ header h1 {
 
 nav {
   display: flex;
-  width: 50vw;
+  width: 100vw;
   background-color: #CCBB00;
   height: 10vh;
   justify-content: center;
@@ -109,6 +109,24 @@ footer h1 {
 img {
   max-width: 25vw;
   max-height: 30vh;
+  transition: 0.3s;
+}
+
+.image {
+  max-width: 40vw;
+  max-height: 45vh;
+  transition: 0.3s;
+}
+
+#about {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+#about section {
+  width: 45vw;
+  margin: 5vw;
 }
 
 @media screen and (max-width: 800pt) {
@@ -139,6 +157,12 @@ img {
 
   #images {
     flex-direction: column;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
   }
 
 }
